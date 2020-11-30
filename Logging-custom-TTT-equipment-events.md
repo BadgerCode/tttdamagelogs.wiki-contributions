@@ -5,10 +5,14 @@ This is done by calling the hook `TTTEquipmentUse`.
 ```lua
 -- In your weapon's code
 
+SWEP.PrintName = "My Custom Weapon"
+
 function SWEP:PrimaryAttack()
     local playerUsingEquipment = self:GetOwner()
     local equipment = self
-    local description = "C4 placed"
+    local description = "Did something cool"
     hook.Call("TTTEquipmentUse", nil, playerUsingEquipment, equipment, description)
 end
 ```
+
+![example preview](images/custom-events-weapon-example.png)
