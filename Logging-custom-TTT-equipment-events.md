@@ -15,4 +15,7 @@ function SWEP:PrimaryAttack()
 end
 ```
 
+In-game, this looks like the following:<br>
 ![example preview](images/custom-events-weapon-example.png)
+
+---
