@@ -1,4 +1,3 @@
-# Discord Notifications
 You can enable Discord notifications for report events and have them sent to a specific channel in your Discord server.<br>
 The following events will result in a Discord notification:
 
