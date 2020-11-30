@@ -1,2 +1,2 @@
-* [Home](/)
-* [Configuration](/Configuring-the-damage-logs)
+* [Home](home)
+* [Configuration](Configuring-the-damage-logs)
