@@ -1,2 +1,3 @@
 * [Home](home)
-* [Configuration](Configuring-the-damage-logs)
+* [Configuration Overview](Configuring-the-damage-logs)
+    * [Configure logging to MySQL](Configure-logging-to-MySQL)
