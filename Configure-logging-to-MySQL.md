@@ -13,7 +13,8 @@ The current version of this file can be found here - [tttdamagelogs/lua/damagelo
 
 
 ## Enabling logging to MySQL
-Once you have set up your MySQL connection, enable logging to MySQL via the addon's configuration file - `lua/damagelogs/config/config.lua`.
+Once you have set up your MySQL connection, enable logging to MySQL via the addon's configuration file:<br>
+`lua/damagelogs/config/config.lua`
 
 Find the following line:<br>
 ```lua
