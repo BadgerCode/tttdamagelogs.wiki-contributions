@@ -1,4 +1,3 @@
-# MySQL
 By default, the addon stores the damage logs for previous rounds in the built-in SQLite table that comes with every Garry's Mod server.<br>
 You can choose to store this information in a MySQL table instead, in order to access the logs from outside of the server (E.g. from a website).
 
