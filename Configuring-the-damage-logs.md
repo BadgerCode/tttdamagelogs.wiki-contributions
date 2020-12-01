@@ -4,9 +4,9 @@ The current version of this file can be found here - [tttdamagelogs/lua/damagelo
 
 <br>
 
-> **Note**: When updating your copy of the damage logs addon, make a backup of your copy of the configuration files!
+> **Note**: When updating your copy of the damage logs addon, backup your configuration files!
 > 
-> Otherwise, you may accidentally overwrite your changes to your configuration files.
+> Otherwise, you may accidentally delete your configuration changes!
 
 
 <br>
