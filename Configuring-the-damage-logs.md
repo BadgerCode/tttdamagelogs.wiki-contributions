@@ -7,3 +7,25 @@ The current version of this file can be found here - [tttdamagelogs/lua/damagelo
 > **Note**: When updating your copy of the damage logs addon, make a backup of your copy of the configuration files!
 > 
 > Otherwise, you may accidentally overwrite your changes to your configuration files.
+
+
+<br>
+
+---
+
+# Damagelog.UseWorkshop
+`Default value: true`
+
+When true, clients will download the custom content for the damage logs via the following workshop addon:<br>
+https://steamcommunity.com/sharedfiles/filedetails/?id=1129792694
+
+The custom content includes the notification sounds used when a player is reported.
+
+Set this to false if you wish to use FastDL instead.
+
+<br> 
+
+---
+
+
+<br> 
