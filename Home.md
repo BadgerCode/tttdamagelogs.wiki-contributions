@@ -1,3 +1,8 @@
+# TTT Damage Logs & RDM Manager
+_Created by [Tommy228](https://github.com/Tommy228)_
+
+---
+
 Welcome to the tttdamagelogs wiki!
 
 Please check the guides in the sidebar.
