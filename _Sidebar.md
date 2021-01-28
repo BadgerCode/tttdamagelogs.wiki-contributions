@@ -1,7 +1,7 @@
 * [Home](home)
 * [Configuration Overview](Configuring-the-damage-logs)
-    * [Configure logging to MySQL](Configure-logging-to-MySQL)
-    * [Configure Discord notifications for reports](Discord-Notifications)
+    * [Use MySQL for old logs](Configure-logging-to-MySQL)
+    * [Discord notifications for reports](Discord-Notifications)
 * [Logging custom equipment events](Logging-custom-TTT-equipment-events)
 * Contributing
     * [Testing guide](Testing-Guide)
