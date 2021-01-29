@@ -21,19 +21,41 @@ The admin Badger handles the report and sets the status to "Finished":<br>
 
 For more examples, see [this imgur album](https://imgur.com/a/kKgondH).
 
+<br><br>
+
+---
+
 <br>
 
 
 ## Enabling Discord Notifications
 
-> **NOTE**: Discord's servers block requests from Garry's Mod servers.
-> 
-> You will need to proxy all of your discord notifications through a website. <br>
-> See [this issue](https://github.com/BadgerCode/tttdamagelogs/pull/2)
+<br>
+
+### 1. Install CHTTP
+_Discord blocks requests from Garry's Mod clients/servers using the built-in HTTP capabilities._<br>
+_You must use a proxy server (hard) or the CHTTP Lua module._
+
+1. Go to https://github.com/timschumi/gmod-chttp/releases
+2. Download the correct version
+    * If you are running on a **Windows server**, on the **32-bit Gmod branch** (currently the default branch for servers)
+        * Download `gmsv_chttp_win32.dll`
+    * If you are running on a **Windows server**, on the **x86-64 Gmod branch**
+        * Download `gmsv_chttp_win64.dll`
+    * If you are running on a **Linux server**, on the **32-bit Gmod branch** (currently the default branch for servers)
+        * Download `gmsv_chttp_linux.dll`
+    * If you are running on a **Linux server**, on the **x86-64 Gmod branch**
+        * Download `gmsv_chttp_linux64.dll`
+3. If it does not already exist in your server's files, create the `garrysmod/lua/bin/` folder on your server.
+    * E.g. If your Garry's Mod server is located at `myserver/garrysmod/gameinfo.txt`
+    * Then this folder should be made at `myserver/garrysmod/lua/bin`
+4. Drop the file you downloaded into this folder
+
+_Thanks to [GMod Store](https://www.gmodstore.com/help/addon/6016/discord/topics/curl-http) for this guide._
 
 <br>
 
-### 1. Create a Discord Webhook URL
+### 2. Create a Discord Webhook URL
 _You must have edit channel permissions_
 
 1. In Discord, right click on the channel you want notifications to appear in
@@ -45,23 +67,10 @@ _You must have edit channel permissions_
 
 <br>
 
-### 2. Set up your Discord Proxy Website
-1. As mentioned before, Discord blocks requests from Garry's Mod servers
-2. Set up your proxy website to use the webhook URL you made in step 1
-3. Write down the URL to your discord proxy
-    * E.g. https://example.com/report-notifications
-
-<br>
-
 ### 3. Set up your GMod server's configuration
-Open the file `garrysmod/cfg/server.cfg` on your server.
-
-Add the line:<br>
-```
-ttt_dmglogs_discordurl "https://example.com/report-notifications"
-```
-
-_Replace `https://example.com/report-notifications` with the URL to your Discord Proxy Website in step 2._
+1. Open the file `garrysmod/cfg/server.cfg` on your server.
+2. Add the line - `ttt_dmglogs_discordurl "https://example.com/report-notifications"`
+3. Replace `https://example.com/report-notifications` with the URL to your Discord Proxy Website in step 2.
 
 <br>
 
@@ -86,3 +95,17 @@ If you only want report notifications when there are no admins online, replace t
 ```lua
 Damagelog.DiscordWebhookMode = 1
 ```
+
+<br><br>
+
+## Using Discord notifications without CHTTP
+
+If you don't want to use the CHTTP module, you can proxy your Discord notifications through a website.
+
+GMod server => Website => Discord API
+
+This requires some experience with creating web services.
+
+In `garrysmod/cfg/server.cfg`, set the `ttt_dmglogs_discordurl` to your proxy website URL.<br>
+E.g.<br>
+`ttt_dmglogs_discordurl "https://example.com/report-notifications"`
