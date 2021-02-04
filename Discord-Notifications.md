@@ -34,7 +34,7 @@ For more examples, see [this imgur album](https://imgur.com/a/kKgondH).
 
 ### 1. Install CHTTP
 _Discord blocks requests from Garry's Mod clients/servers using the built-in HTTP capabilities._<br>
-_You must use a proxy server (hard) or the CHTTP Lua module._
+_You must the CHTTP Lua module (recommended) or use a proxy HTTP server (hard)._
 
 1. Go to https://github.com/timschumi/gmod-chttp/releases
 2. Download the correct version
@@ -65,12 +65,14 @@ _You must have edit channel permissions_
 5. New Webhook
 6. Fill in the information and click "Copy Webhook URL"
 
+The webhook URL should look something like `https://discord.com/api/webhooks/700000000123456789/EXAMPLEEXAMPLEEXAMPLE`
+
 <br>
 
 ### 3. Set up your GMod server's configuration
 1. Open the file `garrysmod/cfg/server.cfg` on your server.
-2. Add the line - `ttt_dmglogs_discordurl "https://example.com/report-notifications"`
-3. Replace `https://example.com/report-notifications` with the URL to your Discord Proxy Website in step 2.
+2. Add the line - `ttt_dmglogs_discordurl "https://discord.com/api/webhooks/700000000123456789/EXAMPLEEXAMPLEEXAMPLE"`
+3. Replace `https://discord.com/api/webhooks/700000000123456789/EXAMPLEEXAMPLEEXAMPLE` with the Discord Webhook URL in step 2.
 
 <br>
 
