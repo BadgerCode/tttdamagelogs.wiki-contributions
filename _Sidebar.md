@@ -5,3 +5,4 @@
 * [Logging custom equipment events](Logging-custom-TTT-equipment-events)
 * Contributing
     * [Testing guide](Testing-Guide)
+    * [Release guide](Release-Guide)
