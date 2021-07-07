@@ -2,6 +2,7 @@
 
 * Update version in version.md (e.g. 3.3.4)
 * Update version in `tttdamagelogs/lua/autorun/damagelog_autorun.lua` (e.g. 3.3.4)
+* Test with bots- Kill some bots, damage some bots, check the current round logs, check old logs, create a report (see [Testing Guide](Testing-Guide))
 * (Optional) Test the addon with other players
 * (Optional) Release a beta
 
