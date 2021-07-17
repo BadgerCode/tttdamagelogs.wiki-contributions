@@ -27,5 +27,11 @@ Set this to false if you wish to use FastDL instead.
 
 ---
 
+# Damagelog.ShowRemainingSlays
+`Default value: false`
 
-<br> 
+When true, on round start, all players are informed of any players that have slays remaining.
+
+![remaining slays](https://user-images.githubusercontent.com/5206198/126043953-088034e1-d5fc-4e31-8096-6507ce235f9d.png)
+
+
