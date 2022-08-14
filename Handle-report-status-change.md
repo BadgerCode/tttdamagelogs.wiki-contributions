@@ -21,11 +21,12 @@ Hook name: `RDMManagerStatusUpdated`
 hook.Remove("RDMManagerStatusUpdated", "myaddon_RDMManagerStatusUpdated")
 hook.Add("RDMManagerStatusUpdated", "myaddon_RDMManagerStatusUpdated", function(ply, reportId, newStatus, isReportFromPreviousMap)
     local reportStatus = "unknown"
-    if(status == 1) then reportStatus = "waiting"
-    elseif(status == 2) then reportStatus = "in progress"
-    elseif(status == 3) then reportStatus = "completed"
+    if(newStatus == 1) then reportStatus = "waiting"
+    elseif(newStatus == 2) then reportStatus = "in progress"
+    elseif(newStatus == 3) then reportStatus = "completed"
+    end
 
-    local map = isReportFromPreviousMap ? "previous map" : "current map"
+    local map = isReportFromPreviousMap and "previous map" or "current map"
 
     print(string.format("The admin %s has changed the status of report %d (%s) to %s",
         ply:Nick(),
@@ -33,6 +34,8 @@ hook.Add("RDMManagerStatusUpdated", "myaddon_RDMManagerStatusUpdated", function(
         map,
         reportStatus
     ))
+    -- Handle the hook
+end)
 ```
 
 ## Output
