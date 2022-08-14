@@ -12,7 +12,7 @@ Hook name: `RDMManagerStatusUpdated`
 | ply | Player [1][Badger] | The player **entity** of the admin that changed the report status |
 | reportId | 1 | The report number. Use this to identify one report from another. Report numbers start again from 1 on map change. |
 | newStatus | 2 | The new status of the report.<br>1: Waiting<br>2: In progress<br>3: Completed |
-| isReportFromPreviousMap | true | Is this report from the previous map. true = this report is from the previous map |
+| isReportFromPreviousMap | true | false = this report is from the current map<br>true = this report is from the previous map |
 
 
 # Example
