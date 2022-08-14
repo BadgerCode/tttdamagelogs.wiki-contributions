@@ -11,7 +11,7 @@ function SWEP:PrimaryAttack()
     local playerUsingEquipment = self:GetOwner()
     local equipment = self
     local description = "Did something cool"
-    hook.Call("TTTEquipmentUse", nil, playerUsingEquipment, equipment, description)
+    hook.Run("TTTEquipmentUse", playerUsingEquipment, equipment, description)
 end
 ```
 
