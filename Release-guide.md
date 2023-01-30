@@ -8,6 +8,8 @@
 
 
 # Create release on GitHub
+https://github.com/BadgerCode/tttdamagelogs/releases
+
 * Tag: E.g. `v3.3.4`
 * Title: E.g. `v3.3.3 - Major bug fixes`
 * Description
