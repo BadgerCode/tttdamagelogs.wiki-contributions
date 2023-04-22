@@ -201,7 +201,7 @@ A dictionary of permissions, where the key is the role name and the value is the
 ### Permissions
 | Setting | Type | Example | Description |
 | -- | -- | -- | -- |
-| access_level | number | 4 | 4: Can always view the logs of the current round.<br>3: Can only view the logs of the current round when spectating.<br>2: Can never view the logs of the current round.<br>1: Same as 2, but the player also cannot see "Logs before your death" when reporting someone. |
+| access_level | number | 2 | 4: Can always view the logs of the current round.<br>3: Can only view the logs of the current round when spectating.<br>2: Can never view the logs of the current round.<br>1: Same as 2, but the player also cannot see "Logs before your death" when reporting someone. |
 | can_access_rdm_manager | boolean | true | Allows players with this role access the RDM manager.<br>Should only be given to administrator/moderator roles. |
 
 <br><br><br><br>
