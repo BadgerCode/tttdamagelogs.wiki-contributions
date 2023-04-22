@@ -17,7 +17,7 @@ https://github.com/BadgerCode/tttdamagelogs/releases
 ```markdown
 To download the update, follow the steps in the [Installation Guide](https://github.com/BadgerCode/tttdamagelogs#installation).
 
-> **Note**: When updating your copy of the damage logs addon, backup your configuration files!
+> **Note**: When updating from a version before 3.6.0, you should backup your Lua configuration file
 > 
 > Otherwise, you may accidentally delete your configuration changes!
 
