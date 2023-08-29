@@ -8,3 +8,4 @@
 * Contributing
     * [Testing guide](Testing-Guide)
     * [Release guide](Release-Guide)
+    * [Making changes to the Wiki](https://github.com/BadgerCode/tttdamagelogs.wiki-contributions)
